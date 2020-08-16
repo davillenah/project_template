@@ -1,0 +1,26 @@
+:root {
+    --gap: 1rem;
+}
+/**
+    *   BREAKING POINTS
+    */
+$phone-only: 599px;
+$tablet-landscape-up: 600px;
+$tablet-portrait-up: 900px;
+$desktop-up: 1200px;
+$big-desktop-up: 1800px;
+/**
+    *   TYPOGRAPHY
+    */
+//- FAMILY
+$font-family--default: monospace;
+$font-family--primary: monospace;
+$font-family--secondary: monospace;
+//- SIZES
+$font-size--default: 16px;
+/**
+    *   COLOR PALETTE
+    */
+/**
+    *   CUSTOM
+    */

@@ -1,0 +1,96 @@
+/*! davh.reset.css | MIT License | https://gist.github.com/davillenah/1345c7e1e1001ddb6184fa87d5339d63 */
+/**
+    *    || TYPOGRAPHY FOR ALL DEVICES
+    */
+* {
+    font-family: $font-family--default;
+    font-family: $font-family--secondary;
+}
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    line-height: inherit;
+}
+body {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #222;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-size: inherit;
+    font-weight: inherit;
+}
+a {
+    display: inline-block;
+    font-family: inherit;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+img {
+    max-width: 100%;
+}
+button,
+[type="button"],
+[type="submit"],
+[type="reset"] {
+    padding: 0;
+    border-width: 0;
+    line-height: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+input,
+optgroup,
+select,
+textarea {
+    line-height: inherit;
+}
+fieldset {
+    padding: 0;
+    border-width: 0;
+    margin: 0;
+}
+cite {
+    font-style: normal;
+}
+dd,
+ol,
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+figure {
+    margin: 0;
+}
+i {
+    color: inherit;
+}
+input::-moz-focus-inner {
+    padding: 0;
+    border-width: 0;
+    margin: 0;
+}
+label {
+    display: inline-block;
+    cursor: pointer;
+}
+p {
+    margin: 0;
+}
+span {
+    display: inline-block;
+}
+abbr[title] {
+    text-decoration: none;
+    font-family: inherit;
+}

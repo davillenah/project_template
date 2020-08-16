@@ -1,0 +1,41 @@
+@mixin col($num: null) {
+    $base: 100%/12;
+    $result: ($base * $num);
+    @if ($num == null) {
+        /**BOX-SIZING**/
+        margin-top: var(--gap);
+        margin-left: var(--gap);
+        /**LAYOUT**/
+        flex: 1 0 auto;
+    } @else {
+        /**BOX-SIZING**/
+        margin-top: var(--gap);
+        margin-left: var(--gap);
+        width: calc(#{$result} - var(--gap));
+        max-width: calc(#{$result} - var(--gap));
+        /**LAYOUT**/
+        flex: 0 0 calc(#{$result} - var(--gap));
+    }
+}
+@mixin push($num) {
+    $base: 100%/12;
+    $result: ($base * $num);
+    @if ($i == 0) {
+        /**BOX-SIZING**/
+        margin-left: var(--gap);
+    } @else {
+        /**BOX-SIZING**/
+        margin-left: calc(#{$result} + var(--gap));
+    }
+}
+@mixin pull($num) {
+    $base: 100%/12;
+    $result: ($base * $num);
+    @if ($i == 0) {
+        /**BOX-SIZING**/
+        margin-right: 0;
+    } @else {
+        /**BOX-SIZING**/
+        margin-right: #{$result};
+    }
+}

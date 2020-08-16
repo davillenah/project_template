@@ -1,0 +1,50 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "description": "",
+  "license": "MIT",
+  "author": "Daniel Alejandro Villena Hernandez",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+
+    "syntax:css": "npx stylelint \"**/*.css\"",
+
+    "production": "npx webpack -p",
+    "build": "npm run build:grid && npx webpack -d",
+    "start": "npx webpack-dev-server",
+
+    "build:grid": "postcss src/sass/grid/grid.txt --output src/sass/grid/_grid.scss --config src/sass/grid/.config.js"
+  },
+  "browserslist": [
+    "last 1 Chrome versions"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "css-loader": "^4.2.1",
+    "cssnano": "^4.1.10",
+    "extract-loader": "^5.1.0",
+    "file-loader": "^6.0.0",
+    "grunt": "^1.2.1",
+    "grunt-bake": "^1.9.0",
+    "html-loader": "^1.1.0",
+    "mdcss": "^1.5.2",
+    "postcss": "^7.0.32",
+    "postcss-cli": "^7.1.1",
+    "postcss-discard-unused": "^4.0.1",
+    "postcss-grid-kiss": "^2.3.0",
+    "postcss-loader": "^3.0.0",
+    "postcss-merge-idents": "^4.0.1",
+    "postcss-reduce-idents": "^4.0.2",
+    "raw-loader": "^4.0.1",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.3",
+    "style-loader": "^1.2.1",
+    "stylelint": "^13.6.1",
+    "stylelint-config-standard": "^20.0.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}

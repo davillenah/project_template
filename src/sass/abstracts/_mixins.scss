@@ -1,0 +1,28 @@
+/**
+    *   MEDIA QUERIES
+    */
+@mixin xs {
+    @media (max-width: #{$phone-only}) {
+        @content;
+    }
+}
+@mixin sm {
+    @media (min-width: #{$tablet-landscape-up}) {
+        @content;
+    }
+}
+@mixin md {
+    @media (min-width: #{$tablet-portrait-up}) {
+        @content;
+    }
+}
+@mixin lg {
+    @media (min-width: #{$desktop-up}) {
+        @content;
+    }
+}
+@mixin xl {
+    @media (min-width: #{$big-desktop-up}) {
+        @content;
+    }
+}

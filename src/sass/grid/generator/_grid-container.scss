@@ -1,0 +1,5 @@
+@mixin container($padding: 5%) {
+    padding-left: $padding;
+    padding-right: $padding;
+    min-height: 100vh;
+}
